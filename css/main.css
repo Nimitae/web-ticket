@@ -1,0 +1,189 @@
+html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: -webkit-gradient(linear, 0% 0%, 0% 92%, from(#6298BD), to(#00182C));
+    background-image: linear-gradient(to bottom, #6298BD 0%, #00182C 92%);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+#navContentWrapper {
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    -moz-border-radius: 4px;
+}
+
+#navContent {
+    margin: auto;
+    max-width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    background: -webkit-gradient(linear, 0% 46%, 0% 92%, from(#F1FCF8), to(#8EA0D3));
+    background-image: linear-gradient(to bottom, #F1FCF8 0%, #8EA0D3 92%);
+    overflow: hidden;
+    -moz-border-radius: 4px;
+}
+
+#navContentWrapper:before, #navContentWrapper:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+    transform: rotate(-3deg);
+}
+
+#navContentWrapper:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+#slide1 {
+    margin: auto;
+    width: 750px;
+    height: 400px;
+    right: 25px;
+    top: 20px;
+    position: absolute;
+}
+
+#slide2 {
+    margin: auto;
+    width: 750px;
+    height: 400px;
+    right: -750px;
+    top: 20px;
+    position: absolute;
+}
+
+.questionText {
+    font-size: 18px;
+    color: black;
+}
+
+.option {
+    width: 400px;
+    height: 25px;
+    margin: 15px;
+    font-size: 18px;
+    color: black;
+    padding: 2px;
+    padding-left: 10px;
+    border: #F1FCF8 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option:hover {
+    color: blue;
+    border: #F1FCF8 solid 2px;
+}
+
+#topbar {
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    color: black;
+    font-size: 36px;
+    width: 750px;
+}
+
+.spacer {
+    height: 30px;
+}
+
+.feedback1 {
+    width: 150px;
+    padding: 5px;
+    font-size: 30px;
+    color: green;
+    background-color: white;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.feedback2 {
+    width: 150px;
+    padding: 5px;
+    font-size: 30px;
+    color: red;
+    background-color: white;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.effect7 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect7:before, .effect7:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect7:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+/* drag n drop */
+
+#container {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    border: 5px solid white;
+}
+
+.dropzone {
+    padding: 10px;
+}
+
+#ropeDropzone {
+    position: relative;
+    height: 240px;
+    width: 250px;
+    background: yellow;
+}
+
+#flowerDropzone {
+    position: relative;
+    height: 80px;
+    width: 100px;
+    background: green;
+}
